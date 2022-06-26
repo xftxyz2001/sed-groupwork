@@ -1,0 +1,99 @@
+{
+  "main": {
+    "id": "4f98584dbaff6a8f",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa943713862a067a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "详细设计说明书.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ac86e8b5af484387",
+    "type": "split",
+    "children": [
+      {
+        "id": "a1c7f6a1800ddf95",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f153ed18a0d002b6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "e89b5b7327d55210",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "825510432b7858c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "b1445eb217d0f3a6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bd852447f9cce37d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "详细设计说明书.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "aa943713862a067a",
+  "lastOpenFiles": [
+    "详细设计说明书.md",
+    "概要设计说明书.md",
+    "软件需求说明书.md",
+    "README.md",
+    "other/参考资料.md",
+    "测试分析报告.md",
+    "测试计划.md"
+  ]
+}
