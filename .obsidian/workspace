@@ -1,15 +1,15 @@
 {
   "main": {
-    "id": "4f98584dbaff6a8f",
+    "id": "c74f5bf3d1af50d2",
     "type": "split",
     "children": [
       {
-        "id": "aa943713862a067a",
+        "id": "60ed6235674bee07",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "详细设计说明书.md",
+            "file": "概要设计说明书.md",
             "mode": "preview"
           }
         }
@@ -18,15 +18,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ac86e8b5af484387",
+    "id": "ff4861922655c8cc",
     "type": "split",
     "children": [
       {
-        "id": "a1c7f6a1800ddf95",
+        "id": "779c6c3d6d7deec5",
         "type": "tabs",
         "children": [
           {
-            "id": "f153ed18a0d002b6",
+            "id": "0b6229779eeba803",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -34,7 +34,7 @@
             }
           },
           {
-            "id": "e89b5b7327d55210",
+            "id": "80fbb5da57525e68",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -55,20 +55,20 @@
     "width": 300
   },
   "right": {
-    "id": "825510432b7858c8",
+    "id": "59f9d4c3ca1e41c7",
     "type": "split",
     "children": [
       {
-        "id": "b1445eb217d0f3a6",
+        "id": "c8f2a2f10178cb6c",
         "type": "tabs",
         "children": [
           {
-            "id": "bd852447f9cce37d",
+            "id": "bf54122cd8b24813",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "详细设计说明书.md",
+                "file": "概要设计说明书.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,13 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "aa943713862a067a",
+  "active": "60ed6235674bee07",
   "lastOpenFiles": [
-    "详细设计说明书.md",
     "概要设计说明书.md",
-    "测试分析报告.md",
     "软件需求说明书.md",
+    "详细设计说明书.md",
     "README.md",
-    "other/参考资料.md",
-    "other/电商项目计划书.md",
-    "other/关于软件工程项目的思考.md",
-    "image/概要设计说明书/软工2.PNG",
-    "image/概要设计说明书/软工1.PNG"
+    "测试计划.md",
+    "测试分析报告.md"
   ]
 }
