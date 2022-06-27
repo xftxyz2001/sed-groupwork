@@ -1,32 +1,29 @@
 {
   "main": {
-    "id": "c74f5bf3d1af50d2",
+    "id": "48a277e249ae2f96",
     "type": "split",
     "children": [
       {
-        "id": "60ed6235674bee07",
+        "id": "4e4aefb7bf9fe90a",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "测试计划.md",
-            "mode": "preview"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "ff4861922655c8cc",
+    "id": "9a7214eb8e490d99",
     "type": "split",
     "children": [
       {
-        "id": "779c6c3d6d7deec5",
+        "id": "787fe8d891b212d2",
         "type": "tabs",
         "children": [
           {
-            "id": "0b6229779eeba803",
+            "id": "2a840a499dd5eaed",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -34,7 +31,7 @@
             }
           },
           {
-            "id": "80fbb5da57525e68",
+            "id": "42e1a6761714f608",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -55,20 +52,19 @@
     "width": 300
   },
   "right": {
-    "id": "59f9d4c3ca1e41c7",
+    "id": "35d7a6c14b4ea1e7",
     "type": "split",
     "children": [
       {
-        "id": "c8f2a2f10178cb6c",
+        "id": "a8474acd57a0c188",
         "type": "tabs",
         "children": [
           {
-            "id": "bf54122cd8b24813",
+            "id": "de2c494da09d49e9",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "测试计划.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,13 +82,6 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "60ed6235674bee07",
-  "lastOpenFiles": [
-    "测试计划.md",
-    "软件需求说明书.md",
-    "详细设计说明书.md",
-    "README.md",
-    "概要设计说明书.md",
-    "测试分析报告.md"
-  ]
+  "active": "4e4aefb7bf9fe90a",
+  "lastOpenFiles": []
 }
