@@ -3,7 +3,7 @@ let interstitialAd = null
 //插屏广告
 Page({
   data: {
-    imgalist: ['https://s2.ax1x.com/2019/09/18/nTVJIg.png']
+    imgalist: ['https://i-s2.328888.xyz/2022/06/27/62b976123f154.jpg']
   },
 // 在页面onLoad回调事件中创建插屏广告实例
 onLoad() {

@@ -19,7 +19,7 @@
                 </view>
                 <view class="weui-article__h2">反馈建议</view>
                 <view class="weui-article__p">
-                    点击【我-反馈】提出您的体验或建议，感谢您的支持。该项目代码开源在Github(realyao)，如果你有更多建议，欢迎提出你的贡献。</view>
+                    提出您的体验或建议，感谢您的支持。</view>
                 <view class="weui-article__h2">支持</view>
                 <view class="weui-article__p">
                     喜欢该程序可以点击右上角 ••• 【分享给好友或朋友圈】，或者<text style="color:#3BAC6A;" bindtap="previewImage">【给作者买瓶娃哈哈】</text>😜。

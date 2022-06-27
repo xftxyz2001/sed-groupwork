@@ -69,11 +69,7 @@
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
             </navigator>      
 
-            <navigator    target="miniProgram"
-    open-type="navigate"
-    app-id="wx8abaf00ee8c3202e"
-    extra-data="{{ extraData }}"
-    version="release" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+            <navigator class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <image src="../../image/tucao.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
                 </view>
@@ -81,7 +77,7 @@
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
             </navigator>     
 
-            <navigator url="../more/more" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+            <navigator class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <image src="../../image/more.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
                 </view>
