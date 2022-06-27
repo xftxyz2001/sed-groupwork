@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "测试计划.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -89,10 +89,12 @@
   "active": "60ed6235674bee07",
   "lastOpenFiles": [
     "测试计划.md",
+    "测试分析报告.md",
     "软件需求说明书.md",
     "详细设计说明书.md",
-    "README.md",
     "概要设计说明书.md",
-    "测试分析报告.md"
+    "image/概要设计说明书/软工2.PNG",
+    "image/概要设计说明书/软工1.PNG",
+    "README.md"
   ]
 }
