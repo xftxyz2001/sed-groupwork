@@ -5,23 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-    lognum:'',
-    imageUrl:'../../image/poster.jpg',
-    imageWidth:0,
-    imageHeight:0,
-    canvasw:'',
-    canvash:'',
-    shareImageSrc:null
+    lognum: '',
+    imageUrl: '../../image/poster.jpg',
+    imageWidth: 0,
+    imageHeight: 0,
+    canvasw: '',
+    canvash: '',
+    shareImageSrc: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let that=this
-    let imgUrl=this.data.imageUrl;
+    let that = this
+    let imgUrl = this.data.imageUrl;
     this.setData({
-      lognum:options.lognum
+      lognum: options.lognum
     });
     wx.getImageInfo({
       src: imgUrl,
@@ -31,7 +31,7 @@ Page({
           imageWidth: res.width / 4.5,
           imageHeight: res.height / 4.5
         })
-        that.drawing('myCanvas',{});
+        that.drawing('myCanvas', {});
       }
     })
 
@@ -41,15 +41,15 @@ Page({
   /**
    * 绘图
    */
-  drawing(canvasId, thisObj){
+  drawing(canvasId, thisObj) {
     let that = this;
     wx.showToast({
       title: '打卡成功',
       icon: 'success',
       duration: 1500
     })
-    
-    let {target,imageUrl}=this.data;
+
+    let { target, imageUrl } = this.data;
 
     var w = that.data.imageWidth;
     var h = that.data.imageHeight;
@@ -68,16 +68,16 @@ Page({
     ctx.setFillStyle('#b2b2b2')
     // ctx.font='24px kaiti'
     ctx.setFontSize(24)
- 
-    ctx.fillText(`${this.getTime()}`, 0.05*w, 0.87 * h )
+
+    ctx.fillText(`${this.getTime()}`, 0.05 * w, 0.87 * h)
     ctx.setFillStyle('#000000')
     ctx.setFontSize(16)
-    ctx.fillText(`已完成 ${this.data.lognum/2} 次专注`, 0.05*w, 0.95 * h )
+    ctx.fillText(`已完成 ${this.data.lognum / 2} 次专注`, 0.05 * w, 0.95 * h)
 
     ctx.draw();
 
     //将图片保存在缓存里
-    setTimeout(function() {
+    setTimeout(function () {
       //将cavas变成图片
       wx.canvasToTempFilePath({
         //通过id 指定是哪个canvas
@@ -90,12 +90,12 @@ Page({
       })
     }, 500)
   },
-  savepic(){
-    let that=this;
+  savepic() {
+    let that = this;
     const res = wx.getSystemInfoSync()
     // console.log(res);
-    let sys=res.system;
-    let version=res.SDKVersion;
+    let sys = res.system;
+    let version = res.SDKVersion;
 
     // wx.getSetting({
     //   success(res) {
@@ -110,24 +110,24 @@ Page({
     //   }
     // })
 
-    if(sys.indexOf("Android")>-1 && this.testVersion(version)){
+    if (sys.indexOf("Android") > -1 && this.testVersion(version)) {
       wx.showShareMenu({
         withShareTicket: true,
         menus: ['shareAppMessage', 'shareTimeline'],
         success(res) {
-          console.log('showShareMenu',res);
+          console.log('showShareMenu', res);
         },
-        fail(err){
+        fail(err) {
           console.log(err);
         }
       })
-    }else{
+    } else {
       // wx.showModal({
       //   title: '提示',
       //   content: '手机系统不支持转发朋友圈，请保存图片后手动转发',
       //   success (res) {
       //     if (res.confirm) {
-            that.saveImage();
+      that.saveImage();
       //     }
       //   }
       // })
@@ -142,24 +142,24 @@ Page({
     var that = this
     wx.saveImageToPhotosAlbum({
       filePath: that.data.shareImageSrc,
-      success: function(res) {
+      success: function (res) {
         wx.showToast({
           title: '图片保存至相册',
           icon: 'success',
           duration: 2000
         })
       },
-      fail: function(res) {}
+      fail: function (res) { }
     })
   },
   /**
    * 判断版本是否大于2.11.3
    * @param v
    */
-  testVersion(v){
-    let arr=v.split('.');
-    if(parseInt(arr[0])<2) return false;
-    if(parseInt(arr[1])<11) return false;
+  testVersion(v) {
+    let arr = v.split('.');
+    if (parseInt(arr[0]) < 2) return false;
+    if (parseInt(arr[1]) < 11) return false;
     return parseInt(arr[2]) >= 3;
   },
 
@@ -204,15 +204,15 @@ Page({
   onReachBottom: function () {
 
   },
-  getTime(){
-    let date1=new Date();
+  getTime() {
+    let date1 = new Date();
     // let year=this.appendZero(date1.getFullYear());
-    let month=date1.getMonth()+1
-    let day=date1.getDate()
+    let month = date1.getMonth() + 1
+    let day = date1.getDate()
     // let hours=this.appendZero(date1.getHours());
     // let minutes=this.appendZero(date1.getMinutes());
     // let seconds=this.appendZero(date1.getSeconds());
-    return month+"月"+day+'日'+'\xa0\xa0'+'打卡'
+    return month + "月" + day + '日' + '\xa0\xa0' + '打卡'
   },
   //过滤补0
   appendZero(obj) {
@@ -231,7 +231,7 @@ Page({
   /**
    *
    */
-  onShareTimeline:function () {
+  onShareTimeline: function () {
 
   }
 })

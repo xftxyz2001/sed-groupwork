@@ -18,21 +18,21 @@ Page({
   },
 
   onLoad: function (options) {
- 
+
   },
 
-  data:{
-    　　extraData: {
-    　　　　from: ''
-    　　}
-    },
-    
-    toMiniProgramSuccess(res){
-        //从其他小程序返回的时候触发
-        wx.showToast({
-          title: '通过超链接跳转其他小程序成功返回了'
-        })
-    },
+  data: {
+    extraData: {
+      from: ''
+    }
+  },
+
+  toMiniProgramSuccess(res) {
+    //从其他小程序返回的时候触发
+    wx.showToast({
+      title: '通过超链接跳转其他小程序成功返回了'
+    })
+  },
   onReady: function () {
 
   },
@@ -42,7 +42,8 @@ Page({
    */
   onShow: function () {
     wx.setNavigationBarTitle({
-      title: '更多好用'});
+      title: '更多好用'
+    });
   },
 
   /**
@@ -79,14 +80,14 @@ Page({
   onShareAppMessage: function () {
 
   },
-    onShareTimeline: function (res){
-        return{  
-          title: '管理时间，保持专注，让自律成为习惯！',
-          query: {   
-            // key: 'value' //要携带的参数 
-          },  
-          imageUrl: '/image/about.png'   
-        }    
-      }
-   
+  onShareTimeline: function (res) {
+    return {
+      title: '管理时间，保持专注，让自律成为习惯！',
+      query: {
+        // key: 'value' //要携带的参数 
+      },
+      imageUrl: '/image/about.png'
+    }
+  }
+
 })

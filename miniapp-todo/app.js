@@ -6,10 +6,10 @@ const defaultTime = {
 
 
 App({
-  onLaunch: function() {
+  onLaunch: function () {
     let workTime = wx.getStorageSync('workTime')
     let restTime = wx.getStorageSync('restTime')
-    
+
     if (!workTime) {
       wx.setStorage({
         key: 'workTime',
@@ -24,7 +24,6 @@ App({
     }
   }
   // viblong: function(){
-
   //   var vibison = wx.getStorageSync('vibison')
   //   console.log(vibison)
   // }

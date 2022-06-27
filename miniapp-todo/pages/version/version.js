@@ -59,13 +59,13 @@ Page({
 
   onShareAppMessage: function (res) {
 
-    if (res.from ==='button') {
+    if (res.from === 'button') {
       // 来自页面内转发按钮
       console.log(res.target)
       return {
-        title:'管理时间，保持专注！让自律成为习惯！',
-         path: '/pages/index/index',
-        imageUrl:'/image/share.jpg' //不设置则默认为当前页面的截图
+        title: '管理时间，保持专注！让自律成为习惯！',
+        path: '/pages/index/index',
+        imageUrl: '/image/share.jpg' //不设置则默认为当前页面的截图
       }
     }
   }

@@ -6,7 +6,7 @@
 
             <view class="weui-article__section">
                             <view class="weui-article__p">
-                        <image class="weui-article__img" src="../../image/maozi.png" mode="aspectFit" style="height: 180px" />
+                        <!-- <image class="weui-article__img" src="../../image/maozi.png" mode="aspectFit" style="height: 180px" /> -->
                                   </view>
                                        <view class="weui-article__p">
 一键给头像加圣诞帽、戴口罩、小国旗。更多头像挂件点击立即使用！

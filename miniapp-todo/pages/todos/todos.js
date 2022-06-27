@@ -7,7 +7,7 @@ Page({
     logs: [],
     toastHidden: true,
   },
-  onShow: function() {
+  onShow: function () {
     wx.setNavigationBarTitle({
       title: '待办清单'
     })
@@ -109,7 +109,7 @@ Page({
     this.save()
     wx.vibrateShort()
   },
-  
+
   clearCompletedHandle: function (e) {
     var todos = this.data.todos
     var remains = []
@@ -127,33 +127,33 @@ Page({
     this.setData({
       toastHidden: false
     })
-  wx.vibrateShort()
+    wx.vibrateShort()
   },
-  hideToast: function() {
+  hideToast: function () {
     this.setData({
       toastHidden: true
     })
   },
   onShareAppMessage: function (res) {
 
-    if (res.from ==='button') {
+    if (res.from === 'button') {
       // 来自页面内转发按钮
       console.log(res.target)
       return {
-        title:'管理时间，保持专注！让自律成为习惯！',
-         path: '/pages/index/index',
-        imageUrl:'/image/share.jpg' //不设置则默认为当前页面的截图
+        title: '管理时间，保持专注！让自律成为习惯！',
+        path: '/pages/index/index',
+        imageUrl: '/image/share.jpg' //不设置则默认为当前页面的截图
       }
     }
   },
-    onShareTimeline: function (res){
-        return{  
-          title: '管理时间，保持专注，让自律成为习惯！',
-          query: {   
-            // key: 'value' //要携带的参数 
-          },  
-          imageUrl: '/image/about.png'   
-        }    
-      }
-   
+  onShareTimeline: function (res) {
+    return {
+      title: '管理时间，保持专注，让自律成为习惯！',
+      query: {
+        // key: 'value' //要携带的参数 
+      },
+      imageUrl: '/image/about.png'
+    }
+  }
+
 })
